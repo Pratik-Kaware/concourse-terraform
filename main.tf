@@ -10,7 +10,7 @@ terraform {
 provider "aws" {
   region = "ap-south-1"
 }
-
+#comment because why not
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-concourse-terraform-bucket-using-concourse"
 
