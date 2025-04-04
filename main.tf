@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
+  profile = "default" # Change to your AWS profile if needed
 }
 
 resource "aws_s3_bucket" "my_bucket" {
