@@ -1,4 +1,10 @@
 terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0" # Use the version you want
+    }
+  }
   backend "s3" {
     bucket         = "my-tf-state-bucket-pratik"
     key            = "terraform.tfstate"
